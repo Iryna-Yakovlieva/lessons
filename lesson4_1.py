@@ -5,8 +5,9 @@
 
 
 
-first_list = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+first_list = [0, 1, 0, 12, 3]
 count_0 = first_list.count(0) # кількість 0 в списку
-first_list.remove(0) # видаляю 0 зі списку
+while 0 in first_list: # видаляю 0 зі списку
+    first_list.remove(0)
 first_list += [0] * count_0 # додаємо 0 в кінець списку
 print(first_list)
