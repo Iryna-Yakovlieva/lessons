@@ -5,14 +5,10 @@
 # кожне слово починається з великої літери.
 # якщо довжина фінішного хештегу більше 140 символів - обрізати підсумковий рядок до 140 символів.
 # Приклади:
-#
 # 'Python Community' -> #PythonCommunity
 # 'i like python community!' -> #ILikePythonCommunity
 # 'Should, I. subscribe? Yes!' -> #ShouldISubscribeYes
 
-
-
-# user_input_string = input("Введіть вираз для hashtag: ")
 from string import punctuation
 
 user_input_string = input("Введіть вираз для hashtag: ")
