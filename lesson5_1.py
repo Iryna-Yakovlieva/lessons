@@ -18,6 +18,7 @@ string_no_numbers = not (user_input_string and user_input_string[0].isdigit())
 # Не містити великі літери
 string_no_register = not any(char.isupper() for char in user_input_string)
 # Змінна не може пробіл і знаки пунктуації, окрім нижнього підкреслення "_".
+no_spaces = ' ' not in user_input_string
 string_no_character = all(
     char not in punctuation or char in allowed_exceptions
     for char in user_input_string
@@ -26,7 +27,6 @@ string_no_character = all(
 string_no_keywords = user_input_string not in keyword.kwlist
 # При цьому повне ім'я змінної повино складатись не більш чим з одного нижнього підкреслення "_". Уточнення підряд!!
 max_text = user_input_string.count('_' * 2) <= 0
-no_spaces = ' ' not in user_input_string
 if (
     string_no_register
     and string_no_character
